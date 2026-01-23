@@ -21,7 +21,7 @@ int main(int argc, const char **argv) {
     system("mkdir -p build/");
 
     char command[512];
-    sprintf(command, "gcc %s -o build/main", sourcefile);
+    sprintf(command, "g++ %s -o build/main", sourcefile);
     system(command);
 
     system("./build/main");
